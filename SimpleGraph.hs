@@ -1,26 +1,15 @@
-
-import Diagrams.Prelude
-import Diagrams.Backend.SVG.CmdLine
-dim p q label = (left <> (text label `place` (l 0.5)) <> right)
-              # translate (v' ^* 1)
-  where
-    left  = a (l 0.4) p <> (p .+^ v') ~~ (p .+^ (-v'))
-    right = a (l 0.6) q <> (q .+^ v') ~~ (q .+^ (-v'))
-    
-    a = arrowBetween' (with & headSize .~ 1)
-    
-    v  = (q .-. p) # normalized
-    v' = rotate (-1/4 :: Turn) v
-    
-
-    l t = p .+^ (q .-. p) ^* t -- center point
-
-f w h = centerXY (r ||| r)
-     <> dim ((-w) ^& (-h/2)) (0 ^& (-h/2)) "x"
-     <> dim (  0  ^& (-h/2)) (w ^& (-h/2)) "x"
-     <> dim (  w  ^& (-h/2)) (w ^& ( h/2)) "y"
-  where
-    r = rect w h
-
-example w h = f w h # lw 0.1 # centerXY # pad 1.1
-main = mainWith (example 6 6:: Diagram B R2)
+>import Diagrams.Prelude
+>import Diagrams.Backend.SVG.CmdLine
+>node :: Int -> Diagram B R2
+>node n = text (show n) # scale 0.2 # fc white
+>       <> circle 0.2 # fc green # named n
+>
+>arrowOpts = with & headGap  .~ 0.07
+>                  & tailGap  .~ 0.07
+>                  & headSize .~ 0.2
+>
+>tournament :: Int -> Diagram B R2
+>tournament n = decorateTrail (regPoly n 1) (map node [1..n])
+>   # applyAll [connectOutside' arrowOpts j k | j <- [1 , 3 , 5], k <- [j+1 .. n]]
+>example = tournament 6
+>main = mainWith (example :: Diagram B R2)
