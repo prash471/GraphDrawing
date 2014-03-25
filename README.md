@@ -1,7 +1,11 @@
 GraphDrawing
 ============
-To run .lhs files
+To run *.lhs / *.hs files
 
-ghc --make Filename.lhs
+ghc --make *.lhs
 
-./DiagramsTutorial -o Filename.svg -w 400
+./* -o *.svg -w 300
+
+Simple graph to create a graph having nodes on a regular hexagon (6 nodes).
+
+Currently working with generalised spring layout algorithm.
