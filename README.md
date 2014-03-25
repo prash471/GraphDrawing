@@ -16,7 +16,7 @@ A simple circle (circle.lhs)
 
 An edge (edge.lhs)
 
-![Build Status](https://drive.google.com/file/d/0B3el1oMKFsOIREExVWZlb3JJTUE/edit?usp=sharing)
+![Build Status](/media/prashant/New Volume/ubuntu stuffs/circle.jpg)
 
 A simple graph
 
