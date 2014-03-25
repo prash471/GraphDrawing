@@ -16,5 +16,10 @@ A simple circle (circle.lhs)
 
 An edge (edge.lhs)
 
-![Build Status](/home/prashant/thesis/circle1.svg)
+![Build Status](https://www.mediafire.com/?5w2y824d97nnxv5)
+
+A simple graph
+
+![Build Status](https://www.mediafire.com/?5w2y824d97nnxv5)
+
 
