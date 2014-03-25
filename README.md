@@ -10,4 +10,11 @@ Simple graph to create a graph having nodes on a regular hexagon (6 nodes).
 
 Currently working with generalised spring layout algorithm.
 
-![Build Status](http://people.brunel.ac.uk/~mastjjb/jeb/or/gt1.gif)
+A simple circle (circle.lhs)
+
+![Build Status](http://projects.haskell.org/diagrams/doc/images/be89c2f6b4436ad7.png)
+
+An edge (edge.lhs)
+
+![Build Status](/home/prashant/thesis/circle1.svg)
+
