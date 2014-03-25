@@ -16,10 +16,10 @@ A simple circle (circle.lhs)
 
 An edge (edge.lhs)
 
-![Build Status](http://www.mediafire.com/download/5w2y824d97nnxv5/circle0.svg)
+![Build Status](https://drive.google.com/file/d/0B3el1oMKFsOIREExVWZlb3JJTUE/edit?usp=sharing)
 
 A simple graph
 
-![Build Status](http://www.mediafire.com/download/ws4j710a2ey2829/circle23.svg)
+![Build Status](https://drive.google.com/file/d/0B3el1oMKFsOIN2FHUE5BX3JPT1U/edit?usp=sharing)
 
 
