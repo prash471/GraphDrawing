@@ -20,6 +20,6 @@ An edge (edge.lhs)
 
 A simple graph
 
-![Build Status](https://drive.google.com/file/d/0B3el1oMKFsOIN2FHUE5BX3JPT1U/edit?usp=sharing)
+![Build Status](http://oi57.tinypic.com/149qrde.jpg)
 
 
